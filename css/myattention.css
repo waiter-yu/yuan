@@ -1,0 +1,145 @@
+body {
+  background-color: #f8f8f8 !important;
+}
+
+.dashibox {
+  overflow: hidden;
+}
+
+.dashibox .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: .2rem;
+  display: flex;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.dashibox .list .list-l {
+  width: 2.7rem;
+  background-color: #fff9f0;
+}
+
+.dashibox .list .list-l .imgbox {
+  padding: .15rem .35rem;
+}
+
+.dashibox .list .list-l .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.dashibox .list .list-l .title {
+  font-size: .12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .1rem .1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashibox .list .list-l .title span {
+  border: 1px solid #f03b3b;
+  border-radius: 4px;
+  height: .34rem;
+  width: .68rem;
+  text-align: center;
+  line-height: .34rem;
+  color: #f03b3b;
+}
+
+.dashibox .list .list-r {
+  width: 4.4rem;
+  height: 100%;
+  background-color: #fff;
+  padding-left: .20rem;
+  padding-right: .20rem;
+}
+
+.dashibox .list .list-r .titname {
+  margin-top: .2rem;
+}
+
+.dashibox .list .list-r .titname .s1 {
+  font-size: .24rem;
+}
+
+.dashibox .list .list-r .titname img {
+  width: .24rem;
+  height: .24rem;
+}
+
+.dashibox .list .list-r .titname .img1 {
+  margin-left: .1rem;
+  margin-right: .2rem;
+}
+
+.dashibox .list .list-r .titname .s2 {
+  font-size: .22rem;
+  color: #ff9900;
+}
+
+.dashibox .list .list-r .titname .img2 {
+  margin-left: .2rem;
+}
+
+.dashibox .list .list-r .titname .defen {
+  font-size: .28rem;
+  color: #747474;
+  float: right;
+}
+
+.dashibox .list .list-r .dashi {
+  margin-top: .3rem;
+  font-size: .24rem;
+  color: #666;
+}
+
+.dashibox .list .list-r .fuwu {
+  margin-top: .2rem;
+  color: #999;
+  font-size: .22rem;
+}
+
+.dashibox .list .list-r .price {
+  margin-top: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashibox .list .list-r .price .pri span {
+  font-size: .36rem;
+  color: #f03b3b;
+}
+
+.dashibox .list .list-r .price .pri s {
+  margin-left: .2rem;
+  font-size: .22rem;
+  color: #999;
+}
+
+.dashibox .list .list-r .price .wenshi a {
+  border-radius: 6px;
+  line-height: .5rem;
+  text-align: center;
+  display: block;
+  width: 1rem;
+  height: .5rem;
+  color: #fff;
+  font-size: .26rem;
+  background-color: #b96714;
+}
+/*# sourceMappingURL=myattention.css.map */

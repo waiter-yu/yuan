@@ -1,0 +1,76 @@
+.view {
+  padding: 0 .2rem;
+}
+
+.view .stars {
+  margin-top: .6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view .stars .manyi {
+  float: left;
+  font-size: .26rem;
+}
+
+.view .stars .xin {
+  float: left;
+  margin-left: .4rem;
+  width: 4rem !important;
+}
+
+.view .stars .xin img {
+  width: .4rem;
+}
+
+.view .content textarea {
+  border: none;
+  margin-top: .6rem;
+  padding: 0;
+  font-size: .28rem;
+  color: #333;
+}
+
+.view .niming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.view .niming input {
+  height: 20px;
+}
+
+.view .niming label {
+  font-size: .26rem;
+  color: #999;
+  margin-left: .2rem;
+}
+
+.view .submit {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.view .submit a {
+  width: 6.7rem;
+  height: .88rem;
+  color: #fff;
+  text-align: center;
+  font-size: .32rem;
+  line-height: .88rem;
+  background-color: #b96714;
+  border-radius: .1rem;
+}
+/*# sourceMappingURL=evaluate.css.map */

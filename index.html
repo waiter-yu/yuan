@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta  charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="wx-modernton">
+    <!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no">
+    <!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- uc强制竖屏 -->
+    <meta name="browsermode" content="application">
+    <!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- QQ应用模式 -->
+    <meta name="keywords" content="">
+    <meta name="Description" content="">
+    <title>不明白问大师</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/ico/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="searchbox">
+        <span class="mui-icon mui-icon-search"></span>
+        <input id='search' type="text" placeholder="搜索">
+        <img id="close" src="./images/cutterman/ask_icon_close@2x.png" alt="">
+    </div>
+    <div class="my-scroll mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+        <div class="mui-scroll">
+            <a class="mui-control-item mui-active">
+                全部
+            </a>
+            <a class="mui-control-item">
+                情感
+            </a>
+            <a class="mui-control-item">
+                事业
+            </a>
+            <a class="mui-control-item">
+                财运
+            </a>
+            <a class="mui-control-item">
+                流年
+            </a>
+            <a class="mui-control-item">
+                生活
+            </a>
+            <a class="mui-control-item">
+                健康
+            </a>
+        </div>
+    </div>
+    <div class="screen">
+        <a id="zonghe" href="javascript:;"><span>综合</span><i class="iconfont icon-paixujiantouxia"></i></a>
+        <a id="pic" href="javascript:;"><span>价格</span><i class="iconfont icon-paixujiantouxia"></i></a>
+        <a id="fuwu" href="javascript:;"><span>服务量</span><i class="iconfont icon-paixujiantouxia"></i></a>
+    </div>
+    <div class="list">
+
+        <div class="listbox">
+            <div class="list-l">
+                <div class="imgbox">
+                    <img src="./images/cutterman/ask_defaultavatar@2x.png" alt="">
+                </div>
+                <div class="title">
+                    <span>生活</span>
+                    <span>流年</span>
+                    <span>情感</span>
+                </div>
+            </div>
+            <div class="list-r">
+                <div class="titname">
+                    <span class="s1">鱼大师</span>
+                    <img class="img1" src="./images/cutterman/ask_icon_certification@2x.png" alt="">
+                    <span class="s2">忙碌</span>
+                    <img class="img2" src="./images/cutterman/ask_icon_follow@2x.png" alt="">
+                    <span class="deifen">
+                        5.0
+                    </span>
+                </div>
+                <div class="dashi">
+                    资深命理风水堪舆师
+                </div>
+                <div class="fuwu">
+                    已服务1080次
+                </div>
+                <div class="price">
+                    <div class="pri">
+                        <span>￥68 </span><s>￥128</s>
+                    </div>
+                    <div class="wenshi">
+                        <a href="./pages/details.html">问事</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="listbox">
+                <div class="list-l">
+                    <div class="imgbox">
+                        <img src="./images/cutterman/ask_defaultavatar@2x.png" alt="">
+                    </div>
+                    <div class="title">
+                        <span>生活</span>
+                        <span>流年</span>
+                        <span>情感</span>
+                    </div>
+                </div>
+                <div class="list-r">
+                    <div class="titname">
+                        <span class="s1">鱼大师</span>
+                        <img class="img1" src="./images/cutterman/ask_icon_certification@2x.png" alt="">
+                        <span class="s2">忙碌</span>
+                        <img class="img2" src="./images/cutterman/ask_icon_follow@2x.png" alt="">
+                        <span class="deifen">
+                            5.0
+                        </span>
+                    </div>
+                    <div class="dashi">
+                        资深命理风水堪舆师
+                    </div>
+                    <div class="fuwu">
+                        已服务1080次
+                    </div>
+                    <div class="price">
+                        <div class="pri">
+                            <span>￥68 </span><s>￥128</s>
+                        </div>
+                        <div class="wenshi">
+                            <a href="./pages/details.html">问事</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        <div class="listbox">
+                    <div class="list-l">
+                        <div class="imgbox">
+                            <img src="./images/cutterman/ask_defaultavatar@2x.png" alt="">
+                        </div>
+                        <div class="title">
+                            <span>生活</span>
+                            <span>流年</span>
+                            <span>情感</span>
+                        </div>
+                    </div>
+                    <div class="list-r">
+                        <div class="titname">
+                            <span class="s1">鱼大师</span>
+                            <img class="img1" src="./images/cutterman/ask_icon_certification@2x.png" alt="">
+                            <span class="s2">忙碌</span>
+                            <img class="img2" src="./images/cutterman/ask_icon_follow@2x.png" alt="">
+                            <span class="deifen">
+                                5.0
+                            </span>
+                        </div>
+                        <div class="dashi">
+                            资深命理风水堪舆师
+                        </div>
+                        <div class="fuwu">
+                            已服务1080次
+                        </div>
+                        <div class="price">
+                            <div class="pri">
+                                <span>￥68 </span><s>￥128</s>
+                            </div>
+                            <div class="wenshi">
+                                <a href="./pages/details.html">问事</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="history">
+       <div class="jilu">
+           
+        </div>
+        <div class="clear">清空搜索记录</div>
+    </div>
+</body>
+</html>
+<script id="history" type="text/template">
+{{each arr value}}
+<span>{{value}}</span>
+{{/each}}
+</script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/iscroll/iscroll.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./lib/jquery.js"></script>
+<script src="./js/common.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/index.js"></script>

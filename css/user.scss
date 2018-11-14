@@ -1,0 +1,68 @@
+body{
+    background-color:#f8f8f8 !important;
+}
+header{
+    background-color: #fff;
+    padding: .4rem .2rem;
+    .imgbox{
+        float: left;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .userbox{
+        height: 1.2rem;
+        float: left;
+        justify-content: space-around;
+        margin-left: .4rem;
+        display: flex;
+        flex-direction: column;
+        .s1{
+            font-size: .28rem;
+            color:#333;
+        }
+        .s2{
+            font-size: .26rem;
+            color:#666;
+        }
+    }
+}
+.wenshi{
+    width: 100%;
+    margin-top: .2rem;
+    a{
+        display: flex !important;
+        align-items: center;
+        .s1{
+            font-size: .32rem !important;
+            color: #333;
+            margin-left: .2rem;
+            letter-spacing:.08rem;
+        }
+    }
+    img{
+        width: .36rem;
+        height: .36rem;
+    }
+}
+.submit{
+  display: flex;
+  justify-content: center;
+    .exit{
+        display: inline-block;
+        width: 6.7rem;
+        height: .88rem;
+        background-color: #b96714;
+        color:#fff;
+        line-height: .88rem;
+        text-align: center;
+        border-radius: .10rem;
+        font-size: .32rem;
+        margin-top: 1rem;
+       
+    }
+}
+.mui-table-view:after,.mui-table-view:before{
+    background-color: #fff;
+}

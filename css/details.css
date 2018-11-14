@@ -1,0 +1,227 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  height: 3.4rem;
+  padding: .5rem .2rem;
+  background-color: #fff9f0;
+}
+
+.head .head-l {
+  float: left;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.head .head-l img {
+  width: 100%;
+  height: 100%;
+}
+
+.head .head-c {
+  float: left;
+  margin-left: .2rem;
+}
+
+.head .head-c .titlename .s1 {
+  font-size: .28rem;
+  color: #333333;
+}
+
+.head .head-c .titlename .img1 {
+  width: .26rem;
+  height: .3rem;
+}
+
+.head .head-c .titlename .s2 {
+  font-size: .22rem;
+  color: #33cc33;
+  margin-left: .3rem;
+}
+
+.head .head-c .dashi {
+  font-size: .26rem;
+  color: #666;
+  margin-top: .30rem;
+}
+
+.head .head-c .label {
+  margin-top: .3rem;
+}
+
+.head .head-c .label span {
+  width: .7rem;
+  height: .36rem;
+  border: 1px solid #f03b3b;
+  text-align: center;
+  line-height: .36rem;
+  font-size: .22rem;
+  border-radius: .05rem;
+  color: #f03b3b;
+  margin-right: .1rem;
+}
+
+.head .head-c .fuwu {
+  margin-top: .3rem;
+  font-size: .22rem;
+  color: #999;
+}
+
+.head .head-r {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: .1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.head .head-r a {
+  width: .48rem;
+  height: .48rem;
+}
+
+.head .head-r a img {
+  width: 100%;
+  height: 100%;
+}
+
+.head .head-r a:nth-child(1) {
+  margin-top: .04rem;
+}
+
+.head .head-r a:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.introduce {
+  background-color: #fff;
+  padding: .4rem .2rem;
+}
+
+.introduce .title {
+  font-size: .32rem;
+  color: #333;
+}
+
+.introduce p {
+  margin-top: .2rem;
+  color: #666;
+}
+
+.kongbai {
+  background-color: #f8f8f8;
+  height: .2rem;
+}
+
+.discuss {
+  padding: .4rem .2rem;
+  padding-bottom: 1rem;
+}
+
+.discuss .title {
+  font-size: .32rem;
+  color: #333;
+}
+
+.discuss .discussbox {
+  padding: .4rem 0;
+  border-bottom: 2px solid #d7d7d7;
+}
+
+.discuss .discussbox .title .photo {
+  float: left;
+  width: .82rem;
+  height: .82rem;
+}
+
+.discuss .discussbox .title .time {
+  height: 100%;
+  margin-left: .2rem;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.discuss .discussbox .title .time span:nth-child(1) {
+  font-size: .28rem;
+  color: #333333;
+}
+
+.discuss .discussbox .title .time span:nth-child(2) {
+  font-size: .22rem;
+  color: #999;
+  margin-top: .2rem;
+}
+
+.discuss .discussbox .title .xinxin {
+  margin-top: .2rem;
+  float: right;
+  height: .4rem;
+}
+
+.discuss .discussbox .title .xinxin img {
+  width: .4rem;
+  height: .4rem;
+}
+
+.discuss .discussbox .content {
+  font-size: .26rem;
+  color: #999;
+  margin-top: .2rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: .98rem;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #d7d7d7;
+}
+
+.footer .pic {
+  float: left;
+  line-height: .98rem;
+}
+
+.footer .pic span:nth-child(1) {
+  font-size: .28rem;
+  color: #333333;
+  margin-left: .2rem;
+}
+
+.footer .pic span:nth-child(2) {
+  font-size: .28rem;
+  color: #f03b3b;
+}
+
+.footer .pic s {
+  font-size: .28rem;
+  color: #999;
+  font-size: .22rem;
+  margin-left: .22rem;
+}
+
+.footer .dialogue {
+  display: inline-block;
+  float: right;
+  background-color: #b96714;
+  width: 2.4rem;
+  height: .98rem;
+  color: #fff;
+  text-align: center;
+  line-height: .98rem;
+  font-size: .32rem;
+}
+/*# sourceMappingURL=details.css.map */

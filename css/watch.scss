@@ -1,0 +1,89 @@
+body {
+    background-color: #fefaf2 !important;
+    padding-bottom: 1rem;
+
+    .view {
+        padding: 0 .2rem;
+        overflow: auto;
+        padding-top: .4rem;
+        padding-bottom: 1rem;
+        background-color: #fefaf2 !important;
+        .left {
+            .content {
+                width: 4.38rem;
+                float: left;
+                margin-left: .10rem;
+               
+            }
+            img {
+                float: left;
+                width: .8rem;
+                height: .8rem;
+                border-radius: .04rem;
+            }
+
+            p {
+                font-size: .3rem;
+                color: #000;
+                padding: .24rem .26rem;
+                border: 1px solid #eeeeee;
+                border-radius: 0 .25rem .25rem .25rem;
+                background-color: #fff;
+                margin-bottom: .3rem !important;
+            }
+        }
+        .right {
+            .content {
+                width: 4.38rem;
+                float: right;
+                margin-right: .10rem;
+            }
+
+            img {
+                float: right;
+                width: .8rem;
+                height: .8rem;
+                border-radius: .04rem;
+            }
+
+            p {
+                font-size: .3rem;
+                color:#fff;
+                padding: .24rem .26rem;
+                border: 1px solid #eeeeee;
+                border-radius:.25rem 0 .25rem .25rem;
+                background-color: #c48a4e;
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+
+        .import {
+            background-color: #f5f5f6;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-top: 1px solid #d7d7d7;
+
+            .voice,
+            .face,
+            .show {
+                width: .56rem;
+                height: .56rem;
+            }
+
+            input {
+                margin: 0;
+                width: 4.88rem;
+                height: .6rem;
+                border-radius: .08rem;
+                padding: 0 .1rem;
+            }
+        }
+    }
+}

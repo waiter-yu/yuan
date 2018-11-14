@@ -1,0 +1,56 @@
+.view{
+    padding: 0 .2rem;
+    .stars{
+        margin-top: .6rem;
+        display: flex;
+        align-items: center;
+        .manyi{
+            float: left;
+            font-size: .26rem;
+        }
+        .xin{
+            float: left;
+            margin-left: .4rem;
+            width: 4rem !important;
+            img{
+                width: .4rem;
+            }
+        }
+    }
+    .content{
+        textarea{
+            border: none;
+            margin-top: .6rem;
+            padding: 0;
+            font-size:.28rem;
+            color: #333;
+        }
+    }
+    .niming{
+        display: flex;
+        align-content: center;
+        input{
+            height: 20px;
+        }
+       label{
+           font-size: .26rem;
+           color: #999;
+           margin-left: .2rem;
+       }
+    }
+    .submit{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+        a{
+            width: 6.7rem;
+            height: .88rem;
+            color: #fff;
+            text-align: center;
+            font-size: .32rem;
+            line-height: .88rem;
+            background-color: #b96714;
+            border-radius: .1rem;
+        }
+    }
+}

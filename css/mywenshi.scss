@@ -1,0 +1,113 @@
+.tabcontent{
+    margin-top: .2rem;
+}
+.mui-active{
+    background-color: #fff !important;
+    color: #b96714 !important;
+}
+.mui-segmented-control{
+    border:none !important;
+}
+.mui-segmented-control a:nth-child(2){
+    border-left: 1px solid #d7d7d7 !important;
+}
+body{
+    background-color:#f8f8f8 !important;
+}
+
+.view{
+    .mui-control-item{
+        color: #000;
+    }
+    .item{
+        padding: .2rem;
+        .imgbox{
+            float: left;
+            width: 1rem;
+            height: 1rem;
+            border-radius: .1rem;
+            overflow: hidden;
+        }
+        .userbox{
+            margin-left: .2rem;
+            height: 1rem;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .s1{
+                font-size: .32rem;
+                color:#000;
+            }
+            .s2{
+                font-size: .26rem;
+                color: #666;
+            }
+        }
+        .title{
+            margin-top: .22rem;
+            float: right;
+            color:#999999;
+        }
+    }
+    .list{
+        padding: 0 .2rem;
+        background-color: #f8f8f8;
+        .li{
+            margin-top: .2rem;
+            background-color: #fff;
+            border-radius: .1rem;
+            padding: .20rem;
+            .li-l{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: .1rem;
+                float: left;
+            }
+            .li-r{
+                float: left;
+                margin-left: .2rem;
+                width: 5rem;
+                .name{
+                    font-size: .28rem;
+                    color:#333;
+                    margin-top: .1rem;
+                }
+                .dashi{
+                    margin-top: .2rem;
+                    font-size: .24rem;
+                    color:#666;
+                }
+                .time{
+                    font-size: .22rem;
+                    color:#999;
+                    margin-top: .2rem;
+                }
+                .pic{
+                    margin-top: .3rem;
+                    font-size: .24rem;
+                    color:#f03b3b;
+                    .s1{
+                        font-size: .36rem;
+                    }
+                }
+                .pingjiabox{
+                    
+                    // display: flex;
+                   float: right;
+                    a{
+                        display: inline-block;
+                        width: 1.4rem;
+                        height: .50rem;
+                        border: 1px solid #d7d7d7;
+                        border-radius: .25rem;
+                        line-height: .5rem;
+                        text-align: center;
+                        font-size: .22rem;
+                        color:#999;
+                    }
+                }
+            }
+        }
+    }
+}

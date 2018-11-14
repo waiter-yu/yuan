@@ -1,0 +1,387 @@
+.view {
+  padding: 0 .2rem;
+}
+
+.view .messige {
+  margin: .4rem 0;
+}
+
+.view .messige .s1 {
+  font-size: .32rem;
+  color: #333;
+}
+
+.view .messige .s2 {
+  font-size: .24rem;
+  color: #999;
+  margin-left: .22rem;
+}
+
+.view .from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+.view .from .from-l {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: .28rem;
+}
+
+.view .from .from-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  font-size: .28rem;
+  padding-left: .2rem;
+}
+
+.view .from .from-r input {
+  width: 2.4rem;
+  border: none;
+  font-size: .28rem;
+  padding: 0;
+  margin: 0;
+}
+
+.view .from .from-r input:before {
+  color: #b96714;
+  font-size: .32rem;
+  top: .10rem;
+  position: absolute;
+}
+
+.view .from .from-r .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view .from .from-r .quhao {
+  font-size: .28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view .from .from-r .phone {
+  padding-left: .2rem;
+}
+
+.view .from .from-r label {
+  font-size: .28rem;
+  color: #666;
+}
+
+.view .from .from-r .btncode {
+  position: absolute;
+  right: .2rem;
+  display: inline-block;
+  width: 2rem;
+  height: .7rem;
+  background-color: #b96714;
+  text-align: center;
+  color: #fff;
+  border-radius: .1rem;
+  font-size: .26rem;
+  border: 1px solid #d7d7d7;
+}
+
+.kong {
+  height: .2rem;
+  background-color: #f8f8f8;
+}
+
+.goods {
+  padding: 0 .2rem;
+}
+
+.goods .title {
+  margin: .4rem 0;
+  font-size: .32rem;
+  color: #333;
+}
+
+.goods .picbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.goods .picbox .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goods .picbox .photo img {
+  width: .8rem;
+  height: .8rem;
+}
+
+.goods .picbox .photo span {
+  margin-left: .2rem;
+}
+
+.goods .picbox .pic {
+  font-size: .28rem;
+  color: #f03b3b;
+}
+
+.goods .wxpay {
+  color: #0094ff;
+  padding: .3rem 0;
+}
+
+.goods .wxpay label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goods .wxpay label .s1 {
+  margin-left: .4rem;
+  margin-right: .2rem;
+  font-size: .28rem;
+  color: #333;
+}
+
+.goods .wxpay label .s2 {
+  font-size: .24rem;
+  color: #999;
+}
+
+.goods .wxpay input {
+  top: .6rem !important;
+}
+
+.goods .wxpay input:before {
+  color: #41af35 !important;
+  font-size: .4rem;
+}
+
+.goods .wxpay img {
+  width: .60rem;
+  height: .54rem;
+}
+
+.zhifu {
+  background-color: #f8f8f8;
+  padding: .5rem 0;
+}
+
+.zhifu .submit {
+  margin: 0 auto;
+  display: block;
+  width: 6.7rem;
+  height: .88rem;
+  background-color: #b96714;
+  border-radius: .1rem;
+  color: #fff;
+  font-size: .32rem;
+  text-align: center;
+  line-height: .88rem;
+  margin-bottom: .24rem;
+}
+
+#quhao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mui-btn-blue, .mui-btn {
+  background-color: #dd9b38;
+  border: 1px solid #dd9b38;
+  color: #fff;
+}
+
+.bg {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.date {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.time {
+  width: 87%;
+  height: 344px;
+  background-color: #fff;
+  margin: 50% auto;
+  position: relative;
+  border-radius: .20rem;
+  overflow: hidden;
+}
+
+.time-foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: .9rem;
+}
+
+.time-foot button {
+  width: 50%;
+  border: none;
+  font-size: .3rem;
+  overflow: hidden;
+  background-color: #fff1de;
+}
+
+.time-foot button:nth-child(2) {
+  border-left: 1px solid #fff;
+}
+
+.GetTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 5.16rem;
+  line-height: 40px;
+}
+
+.GetTime .year {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  text-align: center;
+  overflow: auto;
+}
+
+.GetTime .Month {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+  overflow: auto;
+}
+
+.GetTime .date {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+  overflow: auto;
+}
+
+.GetTime .hour {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  text-align: center;
+  overflow: auto;
+}
+
+.timetop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: .9rem;
+  line-height: .9rem;
+  background-color: #fff1de;
+}
+
+.timetop .yin {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.timetop .yin ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timetop .yin ul li {
+  font-size: .24rem;
+  color: #000;
+  height: .5rem;
+  width: .8rem;
+  text-align: center;
+  line-height: .5rem;
+}
+
+.timetop .settime {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  text-align: center;
+  font-size: .3rem;
+  color: #b96714;
+}
+
+.timetop .day {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: right;
+  padding-right: .4rem;
+  font-size: .24rem;
+  color: #b96714;
+}
+
+.dd {
+  background-color: #dd9b38;
+  border-radius: .25rem;
+  font-size: .24rem;
+  color: #fff !important;
+}
+/*# sourceMappingURL=pay.css.map */

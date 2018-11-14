@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+  background-color: #fff !important;
+}
+ul{
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  /* 解决点击高亮*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  width: 100%;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}

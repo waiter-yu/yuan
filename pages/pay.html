@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="wx-modernton">
+    <!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no">
+    <!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- uc强制竖屏 -->
+    <meta name="browsermode" content="application">
+    <!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- QQ应用模式 -->
+    <meta name="keywords" content="">
+    <meta name="Description" content="">
+    <title>支付订单</title>
+    <link rel="stylesheet" href="../lib/mui/css/mui.css">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/css/mui.picker.min.css">
+    <link rel="stylesheet" href="../lib/css/app.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pay.css">
+</head>
+
+<body>
+    <div class="view">
+        <div class="messige">
+            <span class="s1">缘主信息</span>
+            <span class="s2">(信息完整有利于大师的测算)</span>
+        </div>
+        <div class="from">
+            <div class="from-l">您的姓名:</div>
+            <div class="from-r">
+                <input type="text" name='username' placeholder="请输入姓名">
+            </div>
+        </div>
+        <div class="from">
+            <div class="from-l">您的性别:</div>
+            <div class="from-r">
+                <div class="mui-input-row mui-radio mui-left radio">
+                    <label>男</label>
+                    <input name="sex" value="男" type="radio" checked>
+                </div>
+                <div class="mui-input-row mui-radio mui-left">
+                    <label>女</label>
+                    <input name="sex" value='女' type="radio">
+                </div>
+            </div>
+        </div>
+        <div class="from">
+            <div class="from-l">出生日期:</div>
+            <div class="from-r">
+                <div id='result' class="ui-alert btn color btnTime">请输入你的出生日期</div>
+            </div>
+        </div>
+        <div class="from">
+            <div class="from-l">手机号码:</div>
+            <div class="from-r">
+                <!-- <select class="mui-btn mui-btn-block">
+					<option value="item-1">+86 中国</option>
+					<option value="item-2">+65 新加坡</option>
+					<option value="item-3">+93 阿富汗</option>
+                </select> -->
+                <span id="quhao">+86</span>
+                <input id='phone' class="phone" type="text" placeholder="请输入手机号">
+                <button class="btncode" href="javascript:;">获取验证码</button>
+            </div>
+        </div>
+        <div class="from">
+            <div class="from-l" id="aa">验证码</div>
+            <div class="from-r">
+                <input name='code' type="text" placeholder="请输入验证码">
+            </div>
+        </div>
+    </div>
+    <div class="kong"></div>
+    <div class="goods">
+        <div class="title">
+            商品名称
+        </div>
+        <div class="picbox">
+            <div class="photo">
+                <img src="../images/cutterman/introduction_user_avatar@2x.png" alt="">
+                <span>yu大师</span>
+            </div>
+            <div class="pic">
+                缘价:&nbsp;￥8.8/次
+            </div>
+        </div>
+        <div class="wxpay mui-input-row mui-radio mui-right ">
+            <label><img src="../images/cutterman/gift_icon_wechat@2x.png" alt=""><span class="s1">微信支付</span><span
+                    class="s2">(安全级别:高)</span></label>
+            <input name="radio1" type="radio" checked>
+        </div>
+    </div>
+    <div class="zhifu">
+        <a class="submit" href="javascript:;">立即支付</a>
+    </div>
+
+    <!-- 定义 -->
+    <div class="date">
+        <div class="time">
+            <div class="timetop">
+                <div class="yin">
+                    <ul style="display: flex" class="navs">
+                        <li class="dd">阴历</li>
+                        <li>阳历</li>
+                    </ul>
+                </div>
+                <div class="settime">选择日期</div>
+                <div class="day">今天</div>
+            </div>
+            <div class="timeBody">
+                <div class="GetTime">
+                   <div class="year ">
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                        <div class="getyear">2018年</div>
+                   </div>
+                   <div class="Month">
+                        <div class="getMonth">1月</div>
+                        <div class="getMonth">2月</div>
+                        <div class="getMonth">3月</div>
+                        <div class="getMonth">4月</div>
+                        <div class="getMonth">5月</div>
+                        <div class="getMonth">6月</div>
+                        <div class="getMonth">7月</div>
+                        <div class="getMonth">8月</div>
+                        <div class="getMonth">9月</div>
+                        <div class="getMonth">10月</div>
+                        <div class="getMonth">11月</div>
+                        <div class="getMonth">12月</div>
+                   </div>
+                    <div class="data">
+                            <div class="getDate">12日</div>
+                    </div>
+                   <div class="hour">
+                        <div class="gethour">子时23:00~00:59</div>
+                   </div>
+                    
+                </div>
+            </div>
+            <div class="time-foot">
+                <button class="cancel">取消</button>
+                <button>确定</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script id="history" type="text/template">
+    {{each arr value}}
+<span>{{value}}</span>
+{{/each}}
+</script>
+<script src="../js/rem.js"></script>
+<script src="../lib/jquery.js"></script>
+<script src="../js/common.js"></script>
+<!-- <script src="../"></script> -->
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../lib/mui/js/mui.js"></script>
+<script src="../lib/mui.picker.min.js"></script>
+<script src="../js/pay.js"></script>
+<script src="../js/code.js"></script>
+<!-- <script>
+    (function ($) {
+       
+        
+        $.init();
+        var result = $('#result')[0];
+        var btns = $('.btn');
+        btns.each(function (i, btn) {
+            btn.addEventListener('tap', function () {
+                var _self = this;
+                if (_self.picker) {
+                    _self.picker.show(function (rs) {
+                        result.innerText = rs.text;
+                        _self.picker.dispose();
+                        _self.picker = null;
+                    });
+                } else {
+                    var optionsJson = this.getAttribute('data-options') || '{}';
+                    var options = JSON.parse(optionsJson);
+                    var id = this.getAttribute('id');
+
+                    _self.picker = new mui.DtPicker({
+                        type: "datetime",//设置日历初始视图模式 
+                        beginDate: new Date(1015, 04, 25),//设置开始日期 
+                        endDate: new Date(),//设置结束日期 
+                        labels: ['年', '月', '日', '时', '分'],//设置默认标签区域提示语 
+
+                    })
+                    _self.picker.show(function (rs) {
+                        /*
+                         * rs.value 拼合后的 value
+                         * rs.text 拼合后的 text
+                         * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                         * rs.m 月，用法同年
+                         * rs.d 日，用法同年
+                         * rs.h 时，用法同年
+                         * rs.i 分（minutes 的第二个字母），用法同年
+                         */
+                        result.innerText = rs.text;
+                        result.style.color = "#000";
+                        /* 
+                         * 返回 false 可以阻止选择框的关闭
+                         * return false;
+                         */
+                        /*
+                         * 释放组件资源，释放后将将不能再操作组件
+                         * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                         * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                         * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                         */
+                        _self.picker.dispose();
+                        _self.picker = null;
+                    });
+                }
+            }, false);
+        });
+    })(mui);
+</script> -->

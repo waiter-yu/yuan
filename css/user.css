@@ -1,0 +1,94 @@
+body {
+  background-color: #f8f8f8 !important;
+}
+
+header {
+  background-color: #fff;
+  padding: .4rem .2rem;
+}
+
+header .imgbox {
+  float: left;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header .userbox {
+  height: 1.2rem;
+  float: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: .4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .userbox .s1 {
+  font-size: .28rem;
+  color: #333;
+}
+
+header .userbox .s2 {
+  font-size: .26rem;
+  color: #666;
+}
+
+.wenshi {
+  width: 100%;
+  margin-top: .2rem;
+}
+
+.wenshi a {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wenshi a .s1 {
+  font-size: .32rem !important;
+  color: #333;
+  margin-left: .2rem;
+  letter-spacing: .08rem;
+}
+
+.wenshi img {
+  width: .36rem;
+  height: .36rem;
+}
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.submit .exit {
+  display: inline-block;
+  width: 6.7rem;
+  height: .88rem;
+  background-color: #b96714;
+  color: #fff;
+  line-height: .88rem;
+  text-align: center;
+  border-radius: .10rem;
+  font-size: .32rem;
+  margin-top: 1rem;
+}
+
+.mui-table-view:after, .mui-table-view:before {
+  background-color: #fff;
+}
+/*# sourceMappingURL=user.css.map */

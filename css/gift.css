@@ -1,0 +1,171 @@
+.box {
+  padding: 0 .2rem;
+}
+
+.box .head {
+  padding: .4rem 0;
+  border-bottom: 2px solid #d7d7d7;
+}
+
+.box .head .imgbox {
+  float: left;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.box .head .title {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: .4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box .head .title span:nth-child(1) {
+  margin-top: .2rem;
+  font-size: .28rem;
+  color: #333;
+}
+
+.box .head .title span:nth-child(2) {
+  margin-top: .3rem;
+  font-size: .26rem;
+  color: #666;
+}
+
+.box .gift {
+  padding-bottom: .40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box .gift .imgbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1.26rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: .4rem;
+  margin-right: .56rem;
+}
+
+.box .gift .imgbox img {
+  width: 1.26rem;
+  width: 1.31rem;
+  border-radius: .12rem;
+  border: 3px solid #fff;
+}
+
+.box .gift .imgbox span {
+  text-align: center;
+}
+
+.box .gift .imgbox .s1 {
+  font-size: .28rem;
+  color: #e79712;
+  margin-top: .2rem;
+}
+
+.box .gift .imgbox .s2 {
+  font-size: .22rem;
+  color: #f03b3b;
+  margin-top: .1rem;
+}
+
+.imgbox:nth-child(4n) {
+  margin-right: 0 !important;
+}
+
+.pay {
+  padding: 0 .2rem;
+}
+
+.pay .type {
+  padding: .4rem 0;
+  font-size: .32rem;
+  color: #333;
+  border-bottom: 2px solid #d7d7d7;
+}
+
+.pay .wxpay {
+  color: #0094ff;
+  padding: .4rem 0;
+}
+
+.pay .wxpay label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pay .wxpay label .s1 {
+  margin-left: .4rem;
+  margin-right: .2rem;
+  font-size: .28rem;
+  color: #333;
+}
+
+.pay .wxpay label .s2 {
+  font-size: .24rem;
+  color: #999;
+}
+
+.pay .wxpay input {
+  top: .6rem !important;
+}
+
+.pay .wxpay input:before {
+  color: #41af35 !important;
+  font-size: .4rem;
+}
+
+.pay .wxpay img {
+  width: .60rem;
+  height: .54rem;
+}
+
+.zhifu {
+  background-color: #f8f8f8;
+  padding-top: .8rem;
+}
+
+.zhifu .submit {
+  margin: 0 auto;
+  display: block;
+  width: 6.7rem;
+  height: .88rem;
+  background-color: #b96714;
+  border-radius: .1rem;
+  color: #fff;
+  font-size: .32rem;
+  text-align: center;
+  line-height: .88rem;
+  margin-bottom: .24rem;
+}
+
+.kong {
+  height: .2rem;
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.link {
+  border: 3px solid #ffa002 !important;
+}
+/*# sourceMappingURL=gift.css.map */

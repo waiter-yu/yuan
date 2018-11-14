@@ -1,0 +1,272 @@
+.searchbox {
+  height: 0.58rem;
+  border: 1px solid #d7d7d7;
+  line-height: 0.58rem;
+  border-radius: 30px;
+  position: relative;
+  padding: 0 0.14rem;
+  overflow: hidden;
+  margin: 0.2rem 0.2rem;
+}
+
+.searchbox span {
+  position: absolute;
+  top: 0.18rem;
+  font-size: 0.26rem;
+}
+
+.searchbox input {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 0.26rem;
+  padding-left: 0.3rem;
+}
+
+.searchbox img {
+  position: absolute;
+  top: .15rem;
+  right: .20rem;
+  width: .26rem;
+  height: .26rem;
+}
+
+#close {
+  display: none;
+}
+
+.screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.screen a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  padding: .3rem 0;
+}
+
+.screen a span {
+  font-size: .24rem;
+  color: #333;
+}
+
+.screen a i {
+  font-size: .44rem;
+  margin-top: -.16rem;
+  color: #b96714;
+  position: relative;
+}
+
+.screen a i:before {
+  position: absolute;
+}
+
+.list {
+  background-color: #f8f8f8;
+  padding: 0 .2rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.list .listbox {
+  margin-top: .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.list .listbox .list-l {
+  width: 2.7rem;
+  background-color: #fff9f0;
+}
+
+.list .listbox .list-l .imgbox {
+  padding: .15rem .35rem;
+}
+
+.list .listbox .list-l .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.list .listbox .list-l .title {
+  font-size: .12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 .1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list .listbox .list-l .title span {
+  border: 1px solid #f03b3b;
+  border-radius: 4px;
+  height: .36rem;
+  width: .70rem;
+  text-align: center;
+  line-height: .34rem;
+  color: #f03b3b;
+  font-size: .22rem;
+}
+
+.list .listbox .list-r {
+  width: 4.4rem;
+  height: 100%;
+  background-color: #fff;
+  padding-left: .20rem;
+  padding-right: .20rem;
+}
+
+.list .listbox .list-r .titname {
+  margin-top: .2rem;
+}
+
+.list .listbox .list-r .titname .s1 {
+  font-size: .24rem;
+}
+
+.list .listbox .list-r .titname img {
+  width: .24rem;
+  height: .24rem;
+}
+
+.list .listbox .list-r .titname .img1 {
+  margin-left: .1rem;
+  margin-right: .2rem;
+}
+
+.list .listbox .list-r .titname .s2 {
+  font-size: .22rem;
+  color: #ff9900;
+}
+
+.list .listbox .list-r .titname .img2 {
+  margin-left: .2rem;
+}
+
+.list .listbox .list-r .titname .defen {
+  font-size: .28rem;
+  color: #747474;
+  float: right;
+}
+
+.list .listbox .list-r .dashi {
+  margin-top: .3rem;
+  font-size: .24rem;
+  color: #666;
+}
+
+.list .listbox .list-r .fuwu {
+  margin-top: .2rem;
+  color: #999;
+  font-size: .22rem;
+}
+
+.list .listbox .list-r .price {
+  margin-top: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list .listbox .list-r .price .pri span {
+  font-size: .36rem;
+  color: #f03b3b;
+}
+
+.list .listbox .list-r .price .pri s {
+  margin-left: .2rem;
+  font-size: .22rem;
+  color: #999;
+}
+
+.list .listbox .list-r .price .wenshi a {
+  border-radius: 6px;
+  line-height: .5rem;
+  text-align: center;
+  display: block;
+  width: 1rem;
+  height: .5rem;
+  color: #fff;
+  font-size: .26rem;
+  background-color: #b96714;
+}
+
+.history {
+  padding: .22rem;
+  display: none;
+}
+
+.history .jilu span {
+  float: left;
+  padding: .10rem .20rem;
+  background-color: #f3f5f7;
+  color: #666;
+  font-size: .26rem;
+  margin-right: .2rem;
+  border-radius: 15px;
+  margin-top: .20rem;
+}
+
+.history .clear {
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-top: 1rem;
+  font-size: .28rem;
+  color: #b96714;
+  text-align: center;
+}
+
+.mui-control-item {
+  padding: 0 .2rem !important;
+  font-size: .28rem;
+}
+
+.my-scroll {
+  border-bottom: 2px solid #b96714 !important;
+}
+
+.mui-active {
+  color: #b96714 !important;
+  border: none !important;
+  position: relative;
+}
+
+.mui-active:after {
+  content: '';
+  width: .32rem;
+  height: .32rem;
+  border-radius: 50%;
+  background-color: #b96714;
+  position: absolute;
+  bottom: -.2rem;
+  left: .30rem;
+}
+
+.icon-paixujiantoushang {
+  margin-top: 0.1rem !important;
+}
+/*# sourceMappingURL=index.css.map */

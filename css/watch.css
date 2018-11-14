@@ -1,0 +1,93 @@
+body {
+  background-color: #fefaf2 !important;
+  padding-bottom: 1rem;
+}
+
+body .view {
+  padding: 0 .2rem;
+  overflow: auto;
+  padding-top: .4rem;
+  padding-bottom: 1rem;
+  background-color: #fefaf2 !important;
+}
+
+body .view .left .content {
+  width: 4.38rem;
+  float: left;
+  margin-left: .10rem;
+}
+
+body .view .left img {
+  float: left;
+  width: .8rem;
+  height: .8rem;
+  border-radius: .04rem;
+}
+
+body .view .left p {
+  font-size: .3rem;
+  color: #000;
+  padding: .24rem .26rem;
+  border: 1px solid #eeeeee;
+  border-radius: 0 .25rem .25rem .25rem;
+  background-color: #fff;
+  margin-bottom: .3rem !important;
+}
+
+body .view .right .content {
+  width: 4.38rem;
+  float: right;
+  margin-right: .10rem;
+}
+
+body .view .right img {
+  float: right;
+  width: .8rem;
+  height: .8rem;
+  border-radius: .04rem;
+}
+
+body .view .right p {
+  font-size: .3rem;
+  color: #fff;
+  padding: .24rem .26rem;
+  border: 1px solid #eeeeee;
+  border-radius: .25rem 0 .25rem .25rem;
+  background-color: #c48a4e;
+}
+
+body footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+body footer .import {
+  background-color: #f5f5f6;
+  height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid #d7d7d7;
+}
+
+body footer .import .voice,
+body footer .import .face,
+body footer .import .show {
+  width: .56rem;
+  height: .56rem;
+}
+
+body footer .import input {
+  margin: 0;
+  width: 4.88rem;
+  height: .6rem;
+  border-radius: .08rem;
+  padding: 0 .1rem;
+}
+/*# sourceMappingURL=watch.css.map */
