@@ -55,6 +55,12 @@
       i:before{
         position: absolute;
       }
+      #pic i{
+        display: none;
+      }
+      #fuwu i{
+        display: none;
+      }
     }
   }
   .list{
@@ -227,5 +233,11 @@
     left: .30rem;
   }
   .icon-paixujiantoushang{
-    margin-top: 0.1rem !important;
+    margin-top: 0.06rem !important;
+  }
+  .active2{
+    color:#b96714 !important;
+  }
+  .din:before{
+    display: none;
   }

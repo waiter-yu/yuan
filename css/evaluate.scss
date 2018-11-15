@@ -18,9 +18,10 @@
         }
     }
     .content{
+        margin: .6rem 0;
         textarea{
             border: none;
-            margin-top: .6rem;
+            margin: 0;
             padding: 0;
             font-size:.28rem;
             color: #333;
@@ -29,13 +30,23 @@
     .niming{
         display: flex;
         align-content: center;
-        input{
-            height: 20px;
+        justify-content:space-between;
+        .pj{
+            display: flex;
+            align-items: center;
+            input{
+                height: 20px;
+            }
+           label{
+               font-size: .26rem;
+               color: #999;
+               margin-left: .2rem;
+           }
         }
-       label{
-           font-size: .26rem;
-           color: #999;
-           margin-left: .2rem;
+       
+       .length{
+          font-size: .26rem;
+          color:#999;
        }
     }
     .submit{

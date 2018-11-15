@@ -40,34 +40,8 @@
                     position: absolute;
                 }
             }
-            .radio{
-                display: flex;
-                align-items: center;
-            }
-            .quhao{
-                font-size: .28rem;
-                display: flex;
-                align-items: center;
-            }
             .phone{
                 padding-left: .2rem;
-            }
-            label{
-                font-size: .28rem;
-                color:#666;
-            } 
-            .btncode{
-                position: absolute;
-                right: .2rem;
-                display: inline-block;
-                width: 2rem;
-                height: .7rem;
-                background-color: #b96714;
-                text-align: center;
-                color:#fff;
-                border-radius: .1rem;
-                font-size: .26rem;
-                border: 1px solid #d7d7d7;
             }
         }
        
@@ -161,124 +135,6 @@
     justify-content: center;
     align-items: center;
 }
-.mui-btn-blue,.mui-btn{
-    // background-color: #dd9b38;
-    // border: 1px solid #dd9b38;
-    // color: #fff;
-}
-// .mui-dtpicker-header{
-//     background-color: #fff1de;
-// }
-// ----------------------------------------------------
-//日期弹出框
-.bg{
-    position: fixed;
-   z-index: 998;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: rgba(0,0,0,.3) !important;
-       }
-       .date{
-        display: none;
-        width: 100%;
-        height: 100%;
-       }
-     .time{
-           width: 87%;
-           height: 344px;
-           background-color: #fff;
-           margin: 50% auto;
-           position: relative;
-           border-radius: .20rem;
-           overflow: hidden;
-       }
-       .time-foot{
-           position: absolute;
-           bottom: 0;
-           width: 100%;
-           display: flex;
-           height: .9rem;
-       }
-       .time-foot button{
-           width: 50%;
-           border: none;
-           font-size: .3rem;
-           overflow: hidden;
-           background-color: #fff1de;
-       }
-       .time-foot button:nth-child(2){
-            border-left: 1px solid #fff;
-    }
-       .GetTime{
-           display: flex;
-           justify-content: space-around;
-           height: 5.16rem;
-           line-height: 40px;
-           .year{
-               flex:3;
-               text-align: center;
-               overflow: hidden;
-           }
-           .Month{
-               flex:2;
-               text-align: center;
-               overflow: auto;
-           }
-           .date{
-               flex:2;
-               text-align: center;
-               overflow: auto;
-           }
-           .hour{
-               flex:6;
-               text-align: center;
-               overflow: auto;
-           }
-       }
-       .timetop{
-           display: flex;
-           justify-content: space-around;
-           align-items: center;
-           height: .9rem;
-           line-height: .9rem;
-           background-color:#fff1de;
-           .yin{
-             flex:2;
-             ul{
-                 display: flex;
-                 justify-content: center;
-                 li{
-                    font-size: .24rem;
-                    color:#000;
-                    height: .5rem;
-                    width: .8rem;
-                    text-align: center;
-                    line-height: .5rem;
-                 }
-             }
-           }
-           .settime{
-               flex:3;
-               text-align: center;
-               font-size: .3rem;
-               color:#b96714;
-           }
-           .day{
-               flex:2;
-               text-align: right;
-               padding-right: .4rem;
-               font-size: .24rem;
-               color:#b96714;
-           }
-       }
-       .dd{
-           background-color: #dd9b38;
-           border-radius: .25rem;
-           font-size: .24rem;
-           color:#fff !important;
-       }
 //区号弹出框
 .disno{
     display: none !important;

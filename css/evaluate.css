@@ -27,9 +27,13 @@
   width: .4rem;
 }
 
+.view .content {
+  margin: .6rem 0;
+}
+
 .view .content textarea {
   border: none;
-  margin-top: .6rem;
+  margin: 0;
   padding: 0;
   font-size: .28rem;
   color: #333;
@@ -41,16 +45,33 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.view .niming input {
+.view .niming .pj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.view .niming .pj input {
   height: 20px;
 }
 
-.view .niming label {
+.view .niming .pj label {
   font-size: .26rem;
   color: #999;
   margin-left: .2rem;
+}
+
+.view .niming .length {
+  font-size: .26rem;
+  color: #999;
 }
 
 .view .submit {

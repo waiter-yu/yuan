@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- iphone safri 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- iphone safri 状态栏的背景颜色 -->
+    <meta name="apple-mobile-web-app-title" content="wx-modernton">
+    <!-- iphone safri 添加到主屏界面的显示标题 -->
+    <meta name="format-detection" content="telphone=no, email=no">
+    <!-- 禁止数字识自动别为电话号码 -->
+    <meta name="renderer" content="webkit">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <!-- 是针对一些老的不识别viewport的浏览器，列如黑莓 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- 微软的老式浏览器 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- 禁止百度转码 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- uc强制竖屏 -->
+    <meta name="browsermode" content="application">
+    <!-- UC应用模式 -->
+    <meta name="full-screen" content="yes">
+    <!-- UC强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- QQ应用模式 -->
+    <meta name="keywords" content="">
+    <meta name="Description" content="">
+    <title>支付订单</title>
+    <link rel="stylesheet" href="../lib/mui/css/mui.css">
+    <link rel="stylesheet" href="../lib/css/mui.min.css">
+    <link rel="stylesheet" href="../lib/css/mui.picker.min.css">
+    <link rel="stylesheet" href="../lib/css/app.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/againpay.css">
+</head>
+
+<body>
+    <div class="view">
+        <div class="messige">
+            <span class="s1">缘主信息</span>
+            <span class="s2">(信息完整有利于大师的测算)</span>
+        </div>
+        <div class="from">
+            <div class="from-l">手机号码:</div>
+            <div class="from-r">
+                <span id="quhao">+86</span>
+                <input id='phone' class="phone" type="text" placeholder="请输入手机号">
+            </div>
+        </div>
+    </div>
+    <div class="kong"></div>
+    <div class="goods">
+        <div class="title">
+            商品名称:&nbsp;缘大师在线问事
+        </div>
+        <div class="picbox">
+            <div class="photo">
+                <img src="../images/cutterman/introduction_user_avatar@2x.png" alt="">
+                <span>yu大师</span>
+            </div>
+            <div class="pic">
+                缘价:&nbsp;￥8.8/次
+            </div>
+        </div>
+        <div class="wxpay mui-input-row mui-radio mui-right ">
+            <label><img src="../images/cutterman/gift_icon_wechat@2x.png" alt=""><span class="s1">微信支付</span><span
+                    class="s2">(安全级别:高)</span></label>
+            <input name="radio1" type="radio" checked>
+        </div>
+    </div>
+    <div class="zhifu">
+        <a class="submit" href="javascript:;">立即支付</a>
+    </div>
+    <!-- 区号 -->
+    <div class="bj disno">
+        <div class="region">
+            <div class="title">
+                请选择区号
+            </div>
+            <div class="select">
+                <ul id="regions">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script id="region" type="text/template">
+    {{each arr value}}
+        <li>
+            <span>{{value.text.split('(')[0]}}</span>
+            <span>{{value.value}}</span>
+        </li>
+    {{/each}}
+</script>
+<script src="../js/rem.js"></script>
+<script src="../lib/jquery.js"></script>
+<script src="../js/common.js"></script>
+<script src="../lib/iscroll/iscroll.js"></script>
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../lib/mui/js/mui.js"></script>
+<script src="../lib/mui.picker.min.js"></script>
+<script src="../js/code.js"></script>
+<script src="../js/againpay.js"></script>

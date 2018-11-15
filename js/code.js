@@ -4,25 +4,34 @@ $.ajax({
     type: "get",
     dataType: "json",
     success: function (data) {
-        // console.log(data)
-        let codeJson = data;
-        var picker = new mui.PopPicker();
-        picker.setData(codeJson);
         $('#quhao').on('click', function () {
-            picker.show(function (selectItems) {
-                   console.log(selectItems[0].text);
-                   console.log(selectItems[0].value); 
-                $('#quhao').html("+"+selectItems[0].value)
-            })
+            $('.bj').removeClass('disno');
+            var html = template('region', { arr: data })
+            $('#regions').html(html)  
         })
+    
     }
 })
-var picker = new mui.PopPicker();
-$('#aa').on('click', function () {
-    picker.show(function (selectItems) {
-        console.log(selectItems[0].text);
-        console.log(selectItems[0].value);
-        $('#aa').html("+"+selectItems[0].value)
-    })
-})
+
+// 点击选择区号
+$('#regions').on('click','li',function(){
+    $('#quhao').text('+'+$(this).children("span:last-child").text())
+    $('.bj').addClass('disno')
+ })
+
+
+
+
+
+
+
+
+// var picker = new mui.PopPicker();
+// $('#aa').on('click', function () {
+//     picker.show(function (selectItems) {
+//         console.log(selectItems[0].text);
+//         console.log(selectItems[0].value);
+//         $('#aa').html("+" + selectItems[0].value)
+//     })
+// })
 

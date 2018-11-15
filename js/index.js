@@ -50,6 +50,13 @@ $(function () {
     })
     //综合排序
     $('#zonghe').on('click',function(){
+        $(this).find('span').addClass('active2')
+        $('#pic').find('span').removeClass('active2');
+        $('#fuwu').find('span').removeClass('active2');
+        //显示隐藏排序按钮
+        $(this).find('i').removeClass('din');
+        $('#pic').find('i').addClass('din');
+        $('#fuwu').find('i').addClass('din');
         if($('#zonghe>i').hasClass('icon-paixujiantouxia')){
             $("#zonghe>i").addClass("icon-paixujiantoushang");
             $("#zonghe>i").removeClass("icon-paixujiantouxia");
@@ -60,6 +67,13 @@ $(function () {
     })
     //价格排序点击
     $('#pic').on('click',function(){
+        $(this).find('span').addClass('active2');
+        $('#zonghe').find('span').removeClass('active2');
+        $('#fuwu').find('span').removeClass('active2');
+        //显示隐藏排序
+        $(this).find('i').removeClass('din');
+        $('#zonghe').find('i').addClass('din');
+        $('#fuwu').find('i').addClass('din');
         if($('#pic>i').hasClass('icon-paixujiantouxia')){
             $("#pic>i").addClass("icon-paixujiantoushang");
             $("#pic>i").removeClass("icon-paixujiantouxia");
@@ -70,6 +84,13 @@ $(function () {
     })
        //服务量排序
     $('#fuwu').on('click',function(){
+        $(this).find('span').addClass('active2');
+        $('#zonghe').find('span').removeClass('active2');
+        $('#pic').find('span').removeClass('active2');
+        //显示隐藏
+        $(this).find('i').removeClass('din');
+        $('#pic').find('i').addClass('din');
+        $('#zonghe').find('i').addClass('din');
         if($('#fuwu>i').hasClass('icon-paixujiantouxia')){
             $("#fuwu>i").addClass("icon-paixujiantoushang");
             $("#fuwu>i").removeClass("icon-paixujiantouxia");

@@ -4,6 +4,7 @@ body {
 
 .dashibox {
   overflow: hidden;
+  padding: 0 .2rem;
 }
 
 .dashibox .list {
@@ -17,6 +18,7 @@ body {
   display: flex;
   height: 3rem;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .dashibox .list .list-l {
@@ -52,6 +54,7 @@ body {
   text-align: center;
   line-height: .34rem;
   color: #f03b3b;
+  font-size: .22rem;
 }
 
 .dashibox .list .list-r {

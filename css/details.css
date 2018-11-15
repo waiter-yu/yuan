@@ -131,7 +131,7 @@ img {
 
 .discuss .discussbox {
   padding: .4rem 0;
-  border-bottom: 2px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
 }
 
 .discuss .discussbox .title .photo {
@@ -179,6 +179,13 @@ img {
   font-size: .26rem;
   color: #999;
   margin-top: .2rem;
+}
+
+.discuss .more {
+  font-size: .28rem;
+  color: #666;
+  text-align: center;
+  padding: .6rem 0;
 }
 
 .footer {
