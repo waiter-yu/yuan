@@ -41,18 +41,17 @@ $(function () {
     })
     // var orderId = 87;
     // 从永久储存获取用户id
-    var config = localStorage.getItem("yuan_messige");
-    var info = JSON.parse(config || '[]')
-    console.log(info);
-
-    if (info.length === 0 || info.code === "13") {
-        // mui.toast("请先登录");
-        setTimeout(function () {
-            location.href = "../index.html"
-        }, 2000)
-        return
-    }
-    var userID = info.data.id
+    // var config = localStorage.getItem("yuan_messige");
+    // var info = JSON.parse(config || '[]')
+    // console.log(info);
+    // if (info.length === 0 || info.code === "13") {
+    //     // mui.toast("请先登录");
+    //     setTimeout(function () {
+    //         location.href = "../index.html"
+    //     }, 2000)
+    //     return
+    // }
+    // var userID = info.data.id
     // socket----------------------------------------------------------
     // var socket;
     // if (window.WebSocket) {
