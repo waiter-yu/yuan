@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta  charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- viewport 后面加上 minimal-ui 在safri 体现效果 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,74 +35,195 @@
     <!-- QQ应用模式 -->
     <meta name="keywords" content="">
     <meta name="Description" content="">
-    <title>Document</title>
+    <title>问大师</title>
     <link rel="stylesheet" href="../lib/mui/css/mui.css">
+
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/watch.css">
+    <link rel="stylesheet" href="../css/watch.css?v1.2">
 </head>
 
-<body  scroll="no">
-   
-   <div class="view">
-       <div class="left clearfix">
-           <img src="../images/cutterman/gift_select@2x.png" alt="">
-            <div class="content">
-                <p>哈哈哈哈哈哈哈嘿嘿哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
+<body scroll="no">
+
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title"></h1>
+        <button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left"><span class="mui-icon mui-icon-left-nav"></span>返回</button>
+    </header>
+    <!-- <div class="prompt">
+        <div class="content">
+            <div class="title">
+                本次问事已结束,<br />大师邀请您对本次服务进行评价
             </div>
-       </div>
-       <div class="right clearfix">
-        <img src="../images/cutterman/gift_select@2x.png" alt="">
-         <div class="content">
-             <p>哈哈哈哈哈哈哈嘿嘿eeeeeeeeeeeeeeeeeeeeee哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
-         </div>
+            <div class="btn">
+                <a id="hide" href="javascript:;">不了,谢谢</a>
+                <a id="evaluate" href="javascript:;">立即评价</a>
+            </div>
+        </div>
+    </div> -->
+    <div class="view">
+        <div class="hint"></div>
+
     </div>
-    <div class="left clearfix">
-        <img src="../images/cutterman/gift_select@2x.png" alt="">
-         <div class="content">
-             <p>哈哈哈哈哈哈哈嘿嘿哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
-         </div>
-    </div>
-    <div class="right clearfix">
-        <img src="../images/cutterman/gift_select@2x.png" alt="">
-         <div class="content">
-             <p>哈哈哈哈哈哈哈嘿嘿eeeeeeeeeeeeeeeeeeeeee哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
-         </div>
-    </div>
-    <div class="left clearfix">
-        <img src="../images/cutterman/gift_select@2x.png" alt="">
-         <div class="content">
-             <p>哈哈哈哈哈哈哈嘿嘿哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
-         </div>
-    </div> <div class="left clearfix">
-        <img src="../images/cutterman/gift_select@2x.png" alt="">
-         <div class="content">
-             <p>哈哈哈哈哈哈哈嘿嘿哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
-         </div>
-    </div> <div class="left clearfix">
-        <img src="../images/cutterman/gift_select@2x.png" alt="">
-         <div class="content">
-             <p>哈哈哈哈哈哈哈嘿嘿哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈2</p>
-         </div>
-    </div>
-   </div>
-   <footer>
-    <div class="import">
-        <img class="voice" src="../images/cutterman/dialog_icon_voice@2x.png" alt="">
-        <input type="text">
-        <img class="face" src="../images/cutterman/dialog_icon_expression@2x.png" alt="">
-        <img class="show" src="../images/cutterman/dialog_icon_addto@2x.png" alt="">
-    </div>
-</footer>
+    <footer id="foot">
+        <div class="import">
+            <!-- 语音图标 -->
+            <img class="voice" src="../images/cutterman/dialog_icon_voice@2x.png" alt="">
+            <!-- 键盘图标 -->
+            <img class="keyboard" src="../images/cutterman/dialog_icon_keyboard@2x.png" alt="">
+            <input id="text" type="text">
+            <a class="send" href="javascript:;">按住说话</a>
+            <img class="face" src="../images/cutterman/dialog_icon_expression@2x.png" alt="">
+            <img class="show" src="../images/cutterman/dialog_icon_addto@2x.png" alt="">
+            <a class="sendmsg" href="javascript:;">发送</a>
+        </div>
+        <div class="tool">
+            <div class="photo">
+                <img src="../images/cutterman/photo.png" alt="">
+                <span>照片</span>
+            </div>
+        </div>
+        <div class="imgs">
+            <ul>
+                <li><a data-emoji_code="[:1]" title=""><img src="../images/qq/1.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:2]" title=""><img src="../images/qq/2.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:3]" title=""><img src="../images/qq/3.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:4]" title=""><img src="../images/qq/4.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:5]" title=""><img src="../images/qq/5.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:6]" title=""><img src="../images/qq/6.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:7]" title=""><img src="../images/qq/7.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:8]" title=""><img src="../images/qq/8.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:9]" title=""><img src="../images/qq/9.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:10]" title=""><img src="../images/qq/10.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:11]" title=""><img src="../images/qq/11.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:12]" title=""><img src="../images/qq/12.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:13]" title=""><img src="../images/qq/13.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:14]" title=""><img src="../images/qq/14.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:15]" title=""><img src="../images/qq/15.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:16]" title=""><img src="../images/qq/16.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:17]" title=""><img src="../images/qq/17.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:18]" title=""><img src="../images/qq/18.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:19]" title=""><img src="../images/qq/19.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:20]" title=""><img src="../images/qq/20.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:21]" title=""><img src="../images/qq/21.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:22]" title=""><img src="../images/qq/22.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:23]" title=""><img src="../images/qq/23.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:24]" title=""><img src="../images/qq/24.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:25]" title=""><img src="../images/qq/25.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:26]" title=""><img src="../images/qq/26.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:27]" title=""><img src="../images/qq/27.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:28]" title=""><img src="../images/qq/28.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:29]" title=""><img src="../images/qq/29.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:30]" title=""><img src="../images/qq/30.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:31]" title=""><img src="../images/qq/31.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:32]" title=""><img src="../images/qq/32.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:33]" title=""><img src="../images/qq/33.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:34]" title=""><img src="../images/qq/34.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:35]" title=""><img src="../images/qq/35.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:36]" title=""><img src="../images/qq/36.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:37]" title=""><img src="../images/qq/37.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:38]" title=""><img src="../images/qq/38.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:39]" title=""><img src="../images/qq/39.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:40]" title=""><img src="../images/qq/40.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:42]" title=""><img src="../images/qq/42.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:43]" title=""><img src="../images/qq/43.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:44]" title=""><img src="../images/qq/44.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:46]" title=""><img src="../images/qq/46.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:47]" title=""><img src="../images/qq/47.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:48]" title=""><img src="../images/qq/48.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:49]" title=""><img src="../images/qq/49.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:50]" title=""><img src="../images/qq/50.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:51]" title=""><img src="../images/qq/51.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:52]" title=""><img src="../images/qq/52.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:53]" title=""><img src="../images/qq/53.gif" class="mCS_img_loaded"></a></li>
+                <li><a data-emoji_code="[:55]" title=""><img src="../images/qq/55.gif" class="mCS_img_loaded"></a></li>
+            </ul>
+        </div>
+    </footer>
+<img id="yl" class="yl disno" src="" alt="">
 </body>
+
 </html>
-<script id="history" type="text/template">
-{{each arr value}}
-<span>{{value}}</span>
-{{/each}}
+
+<script id="watch" type="text/template">
+    {{if !content.speaker}}
+        <div class="left clearfix">
+            <img src="{{content.url}}download/file/master/head/{{content.userId}}.JPG" alt="">
+            <div class="content">
+                    {{if content.sendType===1}}
+                    <div class="p1">{{#content.msg}}</div>
+                    {{else if content.sendType===3}}
+                    <div class="chat-l" data-radio="{{content.url}}{{content.src}}">
+                            <img class="ico-l" src="../images/cutterman/dialogbox_voice03_3@3x.png" alt="">
+                            <audio src="{{content.url}}{{content.src}}.mp3" preload></audio>
+                     </div> 
+                    {{else if content.sendType===2}}
+                    <img class="photos" src="{{content.url}}{{content.src}}" alt=""> 
+                    {{/if}}
+            </div>
+        </div>
+    {{else}}
+        <div class="right clearfix">
+            <img src="../images/cutterman/gift_grandmaster_avatar@2x.png" alt="">
+            <div class="content">
+                {{if content.sendType===1}}
+                <div class="p1">{{#content.msg}}</div>
+                {{else if content.sendType===3}}
+                <div class="chat-r">
+                        <img class="ico-r" src="../images/cutterman/dialogbox_voice03@2x.png" alt="">
+                        <audio src="{{content.url}}{{content.src}}.mp3" preload ></audio>
+                 </div> 
+                {{else if content.sendType===2}}
+                <img class="photos" src="{{content.url}}{{content.src}}" alt=""> 
+                {{/if}}
+            </div>
+        </div>
+    {{/if}}
 </script>
-<script src="../lib/mui/js/mui.js"></script>
+<script id="hiht" type="text/template">
+    <div class="hint">{{res.msg}}</div>
+</script>
+<script id="list" type="text/template">
+    {{each list.data.content value}}
+    {{if !value.speaker}}
+        <div class="left clearfix">
+            <img src="{{list.url}}download/file/master/head/{{value.masterId}}.JPG" alt="">
+            <div class="content">
+                {{if value.contentType==1}}
+                <p  class="p1">{{#value.content}}</p>
+                {{else if value.contentType===2}}
+                <img class="photos" src="{{list.url}}{{value.content}}" alt="">
+                {{else if value.contentType===3}}
+                <div class="chat-l">
+                        <img class="ico-l" src="../images/cutterman/dialogbox_voice03_3@3x.png" alt="">
+                        <audio src="{{list.url}}{{value.content}}.mp3" preload ></audio>
+                 </div> 
+                {{/if}}
+            </div>
+        </div>
+    {{else}}
+        <div class="right clearfix">
+            <img src="{{list.url}}download/file/user/head/{{value.userId}}.JPG" alt="">
+            <div class="content">
+                    {{if value.contentType===1}}
+                    <p  class="p1">{{#value.content}}</p>
+                    {{else if value.contentType===2}}
+                    <img class="photos" src="{{list.url}}{{value.content}}" alt="">
+                    {{else if value.contentType===3}}
+                    <div class="chat-r">
+                            <img class="ico-r" src="../images/cutterman/dialogbox_voice03@2x.png" alt="">
+                            <audio src="{{list.url}}{{value.content}}.mp3" preload ></audio>
+                     </div> 
+                    {{/if}}
+            </div>
+        </div>
+    {{/if}}
+    {{/each}}
+</script>
+<!-- <script src="../lib/mui/js/mui.js"></script> -->
 <script src="../js/rem.js"></script>
-<script src="../lib/jquery.js"></script>
-<script src="../js/common.js"></script>
+<script src="../lib/zepto.min.js"></script>
 <script src="../lib/arttemplate/template-web.js"></script>
-<script src="../js/watch.js"></script>
+<script src="../lib/jweixin-1.0.0.js"></script>
+<script src="../js/getwxconfig.js"></script>
+<script src="../js/common.js?v1.0"></script>
+
+<script src="../js/watch.js?v5.0"></script>

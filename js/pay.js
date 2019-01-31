@@ -50,6 +50,7 @@ $(function () {
             mui.toast("请输入正确的验证码");
             return;
         }
+        location.href="./watch.html"
     })
 
 

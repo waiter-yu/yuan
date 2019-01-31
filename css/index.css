@@ -103,26 +103,28 @@
 }
 
 .list .listbox .list-l .imgbox {
-  padding: .15rem .35rem;
+  padding: .20rem .35rem;
+  height: 2.4rem;
 }
 
-.list .listbox .list-l .imgbox img {
-  width: 100%;
-  height: 100%;
+.list .listbox .list-l img {
+  width: 2rem;
+  height: 2rem;
 }
 
-.list .listbox .list-l .title {
+.list .listbox .title {
   font-size: .12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 .1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 0 .1rem .2rem .1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.list .listbox .list-l .title span {
+.list .listbox .title span {
+  margin-left: .1rem;
   border: 1px solid #f03b3b;
   border-radius: 4px;
   height: .36rem;
@@ -133,7 +135,7 @@
   font-size: .22rem;
 }
 
-.list .listbox .list-r {
+.list .list-r {
   width: 4.4rem;
   height: 100%;
   background-color: #fff;
@@ -141,52 +143,52 @@
   padding-right: .20rem;
 }
 
-.list .listbox .list-r .titname {
+.list .list-r .titname {
   margin-top: .2rem;
 }
 
-.list .listbox .list-r .titname .s1 {
+.list .list-r .titname .s1 {
   font-size: .24rem;
 }
 
-.list .listbox .list-r .titname img {
+.list .list-r .titname img {
   width: .24rem;
   height: .24rem;
 }
 
-.list .listbox .list-r .titname .img1 {
+.list .list-r .titname .img1 {
   margin-left: .1rem;
   margin-right: .2rem;
 }
 
-.list .listbox .list-r .titname .s2 {
+.list .list-r .titname .s2 {
   font-size: .22rem;
   color: #ff9900;
 }
 
-.list .listbox .list-r .titname .img2 {
+.list .list-r .titname .img2 {
   margin-left: .2rem;
 }
 
-.list .listbox .list-r .titname .defen {
-  font-size: .28rem;
-  color: #747474;
-  float: right;
+.list .list-r .titname .defen {
+  font-size: .32rem;
+  color: #666666;
+  margin-left: .65rem;
 }
 
-.list .listbox .list-r .dashi {
+.list .list-r .dashi {
   margin-top: .3rem;
   font-size: .24rem;
   color: #666;
 }
 
-.list .listbox .list-r .fuwu {
+.list .list-r .fuwu {
   margin-top: .2rem;
   color: #999;
   font-size: .22rem;
 }
 
-.list .listbox .list-r .price {
+.list .list-r .price {
   margin-top: .25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,18 +201,18 @@
           align-items: center;
 }
 
-.list .listbox .list-r .price .pri span {
+.list .list-r .price .pri span {
   font-size: .36rem;
   color: #f03b3b;
 }
 
-.list .listbox .list-r .price .pri s {
+.list .list-r .price .pri s {
   margin-left: .2rem;
   font-size: .22rem;
   color: #999;
 }
 
-.list .listbox .list-r .price .wenshi a {
+.list .list-r .price .wenshi a {
   border-radius: 6px;
   line-height: .5rem;
   text-align: center;
@@ -284,5 +286,78 @@
 
 .din:before {
   display: none;
+}
+
+body {
+  height: auto;
+}
+
+.mui-toast-container {
+  width: 2.2rem;
+}
+
+.s3 {
+  font-size: .22rem;
+  color: #74bd0c;
+}
+
+.s4 {
+  font-size: .22rem;
+  color: #666;
+}
+
+.unfound {
+  text-align: center;
+  font-size: .32rem;
+  color: #999999;
+  display: none;
+  margin-top: .60rem;
+}
+
+.undone {
+  height: 1.02rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .2rem;
+}
+
+.undone .photobox {
+  width: 3.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.undone .photobox img {
+  width: .8rem;
+  height: .8rem;
+  margin: 0 .2rem;
+}
+
+.undone span {
+  font-size: .26rem;
+  color: #ffffff;
+}
+
+.undone .close {
+  margin-left: .3rem;
+}
+
+.undone .close img {
+  width: .35rem;
+  height: .35rem;
+}
+
+.mui-toast-container:after {
+  display: none !important;
 }
 /*# sourceMappingURL=index.css.map */
